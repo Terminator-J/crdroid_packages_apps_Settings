@@ -573,10 +573,13 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                         group = screen.findPreference("top_level_account_category");
                     } else if (SECURITY_PRIVACY_INJECTED_KEYS.contains(key)) {
                         group = screen.findPreference("top_level_security_privacy_category");
+                    } else {
+                        group = screen.findPreference("top_level_account_category");
                     }
                     if (group instanceof PreferenceCategory) {
                         ((PreferenceCategory) group).addPreference(pref);
                     } else {
+                        // Should never get here now
                         screen.addPreference(pref);
                     }
                 }

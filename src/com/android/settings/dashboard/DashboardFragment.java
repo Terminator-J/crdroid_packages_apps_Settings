@@ -79,7 +79,8 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
 
     private static final List<String> ACCOUNT_INJECTED_KEYS = Arrays.asList(
         "top_level_google",
-        "dashboard_tile_pref_com.google.android.gms.backup.component.BackupOrRestoreSettingsActivity"
+        "dashboard_tile_pref_com.google.android.gms.backup.component.BackupOrRestoreSettingsActivity",
+        "crdroid_deviceextraspartssettings"
     );
 
     private static final List<String> SECURITY_PRIVACY_INJECTED_KEYS = Arrays.asList(
